@@ -1,18 +1,14 @@
 let btn = document.getElementById("btn")
 const toLocalStoreValue = () => {
     const inputValue = document.querySelectorAll("textarea")
-    console.log("save ", inputValue.value)
     let arr = []
     inputValue.forEach((item) => {
-        // console.log("foreach", item.value)
         arr.push(item.value)
     })
     console.log("array", arr)
-
-    //store in logcalStore value
-    localStorage.setItem("nots", JSON.stringify(arr))
-
+    localStorage.setItem("nots", JSON.stringify(arr)) //store in logcalStore value
 }
+
 function generateDiv(text = "") {
     const crtDiv = document.createElement("div")//create a div
     crtDiv.classList.add("main_div")//add a class inside the div
@@ -28,7 +24,6 @@ function generateDiv(text = "") {
         `
 
     crtDiv.insertAdjacentHTML('afterbegin', htmlEntity)
-    // console.log(crtDiv)
 
     // get Reference for remove crtDiv
     const removeBtn = crtDiv.querySelector("#delete")
