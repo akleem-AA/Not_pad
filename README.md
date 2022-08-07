@@ -23,14 +23,15 @@ example :- `document.body.appendChild(crtDiv)`
 Step:-1 We can use simple get the textarea value and push a blank array by uisng forEach() method
 
 Step:-2 example `const toLocalStoreValue = () => {
-    const inputValue = document.querySelectorAll("textarea")
-    let arr = []
-    inputValue.forEach((item) => {
-        arr.push(item.value)
-    })
-    console.log("array", arr)
-    localStorage.setItem("nots", JSON.stringify(arr)) //store in logcalStore value
-}` this the example of get value in input box and store in local store
+          const inputValue = document.querySelectorAll("textarea")
+          let arr = []
+          inputValue.forEach((item) => {
+          arr.push(item.value)
+        })
+       console.log("array", arr)
+      localStorage.setItem("nots", JSON.stringify(arr)) //store in logcalStore value  
+   }
+` this the example of get value in input box and store in local store
 
 Step-3 simple get value inside the localstore by using JSON.parse(localstore.getItem("keyName"))
 example - `const getLocalStore = JSON.parse(localStorage.getItem("nots"))`
