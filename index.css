@@ -1,0 +1,22 @@
+.main_div {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 10px;
+}
+
+.result {
+    height: auto;
+    border: 1px solid black;
+    /* margin: 30px; */
+    padding: 10px;
+    width: fit-content;
+}
+
+.button {
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
